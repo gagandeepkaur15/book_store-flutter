@@ -9,7 +9,7 @@ class Wrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final user = Provider.of<MyUser?>(context);
+    final user = Provider.of<MyUser? >(context); //accesses MyUser data from the provider everytime we get a new value
     print(user);
     if (user == null) {
       return Authenticate();

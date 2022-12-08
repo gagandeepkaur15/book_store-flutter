@@ -19,7 +19,7 @@ class AuthService {
         .authStateChanges()
         // .map((User? user) { return user != null ? User.fromFirebase(user, 0) : null;});
         // .map((User? user) => _userFromFirebaseUser(user));
-        .map(_userFromFirebaseUser);  //same as in above commented line
+        .map(_userFromFirebaseUser); //same as in above commented line
   }
 
   //sign in anon
@@ -40,4 +40,12 @@ class AuthService {
   //register with email and password
 
   //sign out
+  Future signOutUser() async {
+    try {
+      return await _auth.signOut();
+    } catch (e) {
+      print(e.toString());
+      return null;
+    }
+  }
 }
