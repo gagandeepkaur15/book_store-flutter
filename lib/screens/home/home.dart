@@ -14,8 +14,16 @@ class Home extends StatelessWidget {
         elevation: 0,
         actions: <Widget>[
           TextButton.icon(
-            icon: const Icon(Icons.person),
-            label: const Text('logout'),
+            icon: const Icon(
+              Icons.person,
+              color: Colors.black,
+            ),
+            label: const Text(
+              'logout',
+              style: TextStyle(
+                color: Colors.black,
+              ),
+            ),
             onPressed: (() async {
               await _auth.signOutUser();
             }),
