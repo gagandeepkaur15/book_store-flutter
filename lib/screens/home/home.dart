@@ -10,6 +10,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.brown,
         title: const Text('Florish and Blotts Book Store'),
         elevation: 0,
         actions: <Widget>[
