@@ -28,7 +28,9 @@ class MyApp extends StatelessWidget {
           .user, //user is the stream we want to listen to which is being accessed from the AuthSerive class
       initialData: MyUser(),
       child: const MaterialApp(
-        home: Wrapper(), //Now in wrapper widget(descendant) we can access the MyUser data whenever we get some 
+        debugShowCheckedModeBanner: false,
+        home:
+            Wrapper(), //Now in wrapper widget(descendant) we can access the MyUser data whenever we get some
         //whenever change occurs it can listen to it
       ),
     );
