@@ -1,5 +1,5 @@
-import 'package:book_store/screens/authenticate/sign_in.dart';
 import 'package:flutter/material.dart';
+import 'package:book_store/screens/authenticate/sign_in.dart';
 
 class Authenticate extends StatefulWidget {
   const Authenticate({super.key});
